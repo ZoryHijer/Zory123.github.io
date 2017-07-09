@@ -1,11 +1,1014 @@
-<!Doctype html>
-<html>
-<head>
-<title>Zory的博客</title>
-    <meta charset="gbk" />
-    <link href="css.css" rel="stylesheet" type="text/css" media="all" />
-</head>
-<body>
-   你好，这是Zory的博客
-</body>
-</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="g_html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./Files/imageEffect.min.js"></script><script src="./Files/photoSlide.min.js"></script>
+
+<title>zory的个人网站</title>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+
+
+<!--这里的meta标签是为了让facebook共享页面显示正确的语言版本-->
+
+<meta property="og:url" content="http://zory.icoc.cc/">
+
+<!--如果既为内部账号，同时又不是模板网站，那么就屏蔽爬虫-->
+
+
+<script type="text/javascript">
+
+	
+    var _cid = 7312462;
+
+</script>
+
+
+<meta name="mobile-agent" content="format=html5;url=http://m.zory.icoc.cc/">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link rel="canonical" href="http://zory.icoc.cc/">
+
+
+
+<link type="text/css" href="./Files/base.min.css" rel="stylesheet">
+<link type="text/css" href="./Files/27001.min.css" rel="stylesheet" id="templateFrame" class="templateFrameClass">
+
+
+	
+	<link type="text/css" href="./Files/navStyle0.min.css" rel="stylesheet"><link type="text/css" href="./Files/pattern3.min.css" rel="stylesheet"><link type="text/css" href="./Files/pattern6.min.css" rel="stylesheet"><link type="text/css" href="./Files/newSearchBoxStyle.min.css" rel="stylesheet"><link type="text/css" href="./Files/floatBtn1.min.css" rel="stylesheet">
+
+
+<link type="text/css" href="./Files/poshytipAndmCustomScrollbar.min.css" rel="stylesheet">
+
+
+
+
+
+
+
+<link type="text/css" href="./Files/jzcusstyle.jsp" rel="stylesheet">
+
+<style id="stylemodule">
+</style>
+<style id="styleWebSite" type="text/css">
+</style>
+<style id="styleTitle" type="text/css">
+</style>
+
+
+
+
+<style type="text/css" id="stylebacktotop">.fk_siteBackToTop{display:none;}
+.fk_siteBackToTop{width:41px;}
+.fk_siteBackToTop{height:38px;}
+.fk_siteBackToTop{cursor:pointer;}
+.fk_siteBackToTop{position:fixed;}
+.fk_siteBackToTop{z-index:9030;}
+.fk_siteBackToTop{right:40px;}
+.fk_siteBackToTop{bottom:50px;}
+.fk_siteBackToTop{background:url(http://0.ss.faisys.com/image/site/backtotop.png?v=201411241810) no-repeat;}</style></head>
+<body class="g_body g_locale2052 ">
+
+
+<script type="text/javascript">
+(function(FUN,undefined){var list=[];FUN.run=function(){if(arguments.length<1){throw new Error("jzUtils.run 参数错误");return}var name=arguments[0].name,callMethod=arguments[0].callMethod||false,prompt=arguments[0].prompt||false,promptMsg=arguments[0].promptMsg||"功能还在加载中，请稍候",base=arguments[0].base||(window.Fai&&Fai.top.Site)||top.Site||window,args=Array.prototype.slice.call(arguments),funcArgs=args.slice(1),callbackFunc={},result;result=checkMethod(name,base);if(result.success){callMethod=false;try{result.func.apply(result.func,funcArgs)}catch(e){console&&console.log&&console.log("错误:name="+e.name+"; message="+e.message)}}else{if(prompt){window.Fai&&Fai.ing(promptMsg,true)}}if(callMethod){callbackFunc.name=name;callbackFunc.base=base;callbackFunc.args=funcArgs;list.push(callbackFunc)}};FUN.trigger=function(option){if(typeof option!=="object"){throw new Error("jzUtils.trigger 参数错误");return}var funcName=option.name||"",base=option.base||(window.Fai&&Fai.top.Site)||top.Site||window,newList=[],result,func,i,param;if(funcName.length<1){return}for(i=0;i<list.length;i++){param=list[i];if(param.name==funcName){result=checkMethod(funcName,base);if(result.success){try{result.func.apply(result.func,param.args)}catch(e){console&&console.log&&console.log("错误:name="+e.name+"; message="+e.message)}}}else{newList.push(param)}}list=newList};function checkMethod(funcName,base){var methodList=funcName.split("."),readyFunc=base,result={"success":true,"func":function(){}},methodName,i;for(i=0;i<methodList.length;i++){methodName=methodList[i];if(methodName in readyFunc){readyFunc=readyFunc[methodName]}else{result.success=false;return result}}result.func=readyFunc;return result}})(window.jzUtils||(window.jzUtils={}))
+var _faiAjax = function(){
+	//for regexp
+	var r = /\?/;
+	var _o = {
+		type:"get",
+		url:"",
+		data:"",
+		error:function(){},
+		success:function(){}
+	};
+	var _sendRequest=function(o) {
+		var xmlhttp = null;
+		//init option code
+		o.type = o.type || _o.type;
+		o.url = o.url || _o.url;
+		o.data = o.data || _o.data;
+		o.error = o.error || _o.error;
+		o.success = o.success || _o.success;
+		if (window.XMLHttpRequest) {
+			// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp=new XMLHttpRequest();
+		}else{
+			// code for IE6, IE5
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		//the instructions param takes the form of an eval statement
+		if(o.type != "post") {
+			o.url += ( this.r.test( o.url ) ? "&" : "?" ) + o.data;
+			xmlhttp.open("GET", o.url, true);
+				xmlhttp.onreadystatechange=function() {
+				if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+					o.success( xmlhttp.responseText );
+				}else if( o.error ){
+					o.error();
+				}
+			}
+			xmlhttp.send();
+		} else {
+			xmlhttp.open("POST", o.url, true);
+			//Send the proper header information along with the request
+			xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded; charset=UTF-8");
+			xmlhttp.onreadystatechange=function() {
+				if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+					o.success( xmlhttp.responseText );
+				}else{
+					o.error();
+				}
+			}
+			xmlhttp.send(o.data);
+		}
+	}
+	return {
+		ajax:function(option){
+			try {
+				//此次调用的错误不让抛出给window。防止函数重入
+				_sendRequest(option);	
+			}catch(e){
+				//alert(e);
+			}
+		}
+	};
+}();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div id="siteBackToTop_small_box" class="fk_siteBackToTop" title="回到顶部" _style="" style="right: 40px; bottom: 50px; display: none;"></div><div id="g_main" class="g_main g_col2 " style="width: 1583px;">
+	<div id="web" class="g_web ">
+		<table class="webTopTable" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="center">
+					<div id="webTop" class="webTop">
+						<div id="logo" class="logo logo2" style="top:34px;left:51px;display:block;" onclick="" _defaultlogo="0"><a id="logoLink" hidefocus="true" class="link-p" href="http://zory.icoc.cc/" link="http://zory.icoc.cc" target="_self"><img id="logoImg" title="Zory" alt="Zory" style="float:left;" height="78" width="217" src="./Files/ABUIABAEGAAg7ejpsgUo38eojwQw5BI4hgg!300x300.png"></a></div>
+
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+
+		<table class="absTopTable" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="center">
+					<div id="absTopForms" class="forms sideForms absForms">
+						<div style="position:absolute;"></div><!-- for ie6 -->
+						<div id="module387" _indexclass="formIndex1" _moduletype="1" _modulestyle="28" _moduleid="387" systempattern="60" class="form form387 formIndex1 formStyle28 modulePattern modulePattern60" title="" _sys="0" _banid="" style="position: absolute; top: 105px; left: 687px; width: 155px; height: 37px;" _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _autoheight="0" _global="true" _independent="false">
+<table class="formTop formTop387" cellpadding="0" cellspacing="0"><tbody><tr><td class="left"></td><td class="center"></td><td class="right"></td></tr></tbody></table>
+<table class=" formMiddle formMiddle387" style="height:37px; " cellpadding="0" cellspacing="0"><tbody><tr>
+<td class="formMiddleLeft formMiddleLeft387"></td>
+<td class="formMiddleCenter formMiddleCenter387 " valign="top">
+<div class="formMiddleContent formMiddleContent387" tabstyle="0" style="height: 27px; overflow: hidden;">
+<div class="includeWeather1"><ul class="weather2"><li class="cityName1">中山</li><li class="weatherCon1">阵雨</li><li class="temperature1"><span class="temperature11">31℃</span> ~<span class="temperature21">26℃</span></li></ul></div></div>
+</td>
+<td class="formMiddleRight formMiddleRight387"></td>
+</tr></tbody></table>
+<table class="formBottom formBottom387" cellpadding="0" cellspacing="0"><tbody><tr><td class="left left387"></td><td class="center center387"></td><td class="right right387"></td></tr></tbody></table>
+<div class="clearfloat clearfloat387"></div>
+</div>
+
+<div id="module362" bannertitle="文件网盘" _indexclass="formIndex2" _moduletype="1" _modulestyle="81" _moduleid="362" class="form form362 formIndex2 formStyle81" title="" _sys="0" _banid="" style="position: absolute; top: 143px; left: 10px; width: 105px; border: 10px solid transparent; margin-top: -10px; margin-left: -10px; height: 37px;" _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _autoheight="0" _global="false" _independent="false">
+<div class="lightModuleOuterContent lightModuleOuterContent362"><div class="J_floatBtnBox floatBtnBox floatBtnStyle104 "><a id="module362FlBtn" href="http://zory.ys168.com/" target="_blank" class="middle floatBtn">文件网盘</a></div></div>
+</div>
+
+
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+		<table class="webNavTable" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="center">
+					<div id="webNav" class="webNav webNavDefault">
+						<div id="nav" class="nav nav2 fixedNavPos  navStyle navStyle56">
+<div class="navMainContent"><table class="navTop" cellpadding="0" cellspacing="0"><tbody><tr><td class="navTopLeft"></td><td class="navTopCenter"></td><td class="navTopRight"></td></tr></tbody></table>
+<table class="navContent" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td class="navLeft"></td>
+<td class="navCenterContent" id="navCenterContent" valign="top" align="left">
+<div id="navCenter" class="navCenter" style="width: 590px;">
+<div class="itemPrev" style="display: none;"></div>
+<div class="itemContainer">
+<table title="" class="item itemCol2 itemIndex1 itemSelected itemSelectedIndex1" cellpadding="0" cellspacing="0" colid="2" id="nav2" onclick="window.open(&quot;/&quot;, &quot;_self&quot;)" _jump="window.open(&quot;/&quot;, &quot;_self&quot;)">
+<tbody><tr>
+<td class="itemLeft"></td>
+<td class="itemCenter"><a hidefocus="true" style="outline:none;" href="http://zory.icoc.cc/" target="_self" onclick="return false;"><span class="itemName0">首页</span></a></td>
+<td class="itemRight"></td>
+</tr>
+</tbody></table>
+<div class="itemSep"></div><table title="" class="item itemCol107 itemIndex2" cellpadding="0" cellspacing="0" colid="107" id="nav107" onclick="window.open(&quot;/col.jsp?id=107&quot;, &quot;_self&quot;)" _jump="window.open(&quot;/col.jsp?id=107&quot;, &quot;_self&quot;)">
+<tbody><tr>
+<td class="itemLeft"></td>
+<td class="itemCenter"><a hidefocus="true" style="outline:none;" href="http://zory.icoc.cc/col.jsp?id=107" target="_self" onclick="return false;"><span class="itemName0">Hijer助手</span></a></td>
+<td class="itemRight"></td>
+</tr>
+</tbody></table>
+<div class="itemSep"></div><table title="" class="item itemCol111 itemIndex3" cellpadding="0" cellspacing="0" colid="111" id="nav111" onclick="window.open(&quot;/col.jsp?id=111&quot;, &quot;_self&quot;)" _jump="window.open(&quot;/col.jsp?id=111&quot;, &quot;_self&quot;)">
+<tbody><tr>
+<td class="itemLeft"></td>
+<td class="itemCenter"><a hidefocus="true" style="outline:none;" href="http://zory.icoc.cc/col.jsp?id=111" target="_self" onclick="return false;"><span class="itemName0">Delphi资源</span></a></td>
+<td class="itemRight"></td>
+</tr>
+</tbody></table>
+<div class="itemSep"></div><table title="" class="item itemCol9 itemIndex4" cellpadding="0" cellspacing="0" colid="9" id="nav9" onclick="window.open(&quot;/msgBoard.jsp&quot;, &quot;_self&quot;)" _jump="window.open(&quot;/msgBoard.jsp&quot;, &quot;_self&quot;)">
+<tbody><tr>
+<td class="itemLeft"></td>
+<td class="itemCenter"><a hidefocus="true" style="outline:none;" href="http://zory.icoc.cc/msgBoard.jsp" target="_self" onclick="return false;"><span class="itemName0">留言板</span></a></td>
+<td class="itemRight"></td>
+</tr>
+</tbody></table>
+<div class="itemSep"></div><table title="" class="item itemCol113 itemIndex5" cellpadding="0" cellspacing="0" colid="113" id="nav113" onclick="window.open(&quot;http://www.cnblogs.com/Zory/&quot;, &quot;_blank&quot;)" _jump="window.open(&quot;http://www.cnblogs.com/Zory/&quot;, &quot;_blank&quot;)">
+<tbody><tr>
+<td class="itemLeft"></td>
+<td class="itemCenter"><a hidefocus="true" style="outline:none;" href="http://www.cnblogs.com/Zory/" target="_blank" onclick="return false;"><span class="itemName0">我的博客</span></a></td>
+<td class="itemRight"></td>
+</tr>
+</tbody></table>
+<div class="itemSep"></div><table title="" class="item itemCol114 itemIndex6" cellpadding="0" cellspacing="0" colid="114" id="nav114" onclick="window.open(&quot;/col.jsp?id=114&quot;, &quot;_self&quot;)" _jump="window.open(&quot;/col.jsp?id=114&quot;, &quot;_self&quot;)">
+<tbody><tr>
+<td class="itemLeft"></td>
+<td class="itemCenter"><a hidefocus="true" style="outline:none;" href="http://zory.icoc.cc/col.jsp?id=114" target="_self" onclick="return false;"><span class="itemName0">支持</span></a></td>
+<td class="itemRight"></td>
+</tr>
+</tbody></table>
+</div>
+<div class="itemNext" style="display: none;"></div>
+</div>
+</td>
+<td class="navRight"></td>
+</tr>
+</tbody></table>
+<table class="navBottom" cellpadding="0" cellspacing="0"><tbody><tr><td class="navBottomLeft"></td><td class="navBottomCenter"></td><td class="navBottomRight"></td></tr></tbody></table>
+</div>
+</div>
+<a href="http://zory.icoc.cc/col.jsp?id=115" style="display:none;">感谢你们</a>
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+		<table class="webHeaderTable" cellpadding="0" cellspacing="0" id="webHeaderTable">
+			<tbody><tr>
+				<td align="center" class="webHeaderTd fk-moduleZoneWrap">
+					<div id="fk-webHeaderZone" class="J_moduleZone fk-webHeaderZone fk-moduleZone forms sideForms">
+						<div class="fk-moduleZoneBg"></div>
+						
+					</div>
+					<div id="webHeader" class="webHeader">
+						<table class="headerTable" cellpadding="0" cellspacing="0">
+							<tbody><tr>
+								<td class="headerCusLeft"></td>
+								<td class="headerCusMiddle" align="center" valign="top">
+									<div class="headerNav">
+								
+									</div>
+								</td>
+								<td class="headerCusRight"></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+
+		<table class="webBannerTable J_webBannerTable" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="center" class="fk-moduleZoneWrap">
+					
+					
+					<div id="fk-webBannerZone" class="J_moduleZone fk-webBannerZone fk-moduleZone forms sideForms">
+						<div class="fk-moduleZoneBg"></div>
+						
+					</div>
+					
+					<div id="webBanner" class="webBanner">
+						<table class="bannerTable" cellpadding="0" cellspacing="0">
+							<tbody><tr>
+								<td class="bannerLeft"></td>
+								<td class="bannerCenter" align="center" valign="top">
+									<div class="bannerTop"></div>
+<div id="banner" class="banner extBanner" style="height: 559px; overflow: hidden; display: block; background: none;" normalheight="559" defaultwidth="1440">
+	
+	
+	
+<div class="imageSwitchShowName photoSwitchBg" style="position: absolute; display: none; z-index: 2; width: 1583px; height: 30px; line-height: 30px;"><span class="spanHiddenName spanShowName" style="margin-left: 10px;"></span></div><div class="imageSwitchBtnArea" style="position: absolute; z-index: 3; display: none; width: 19px;"><a class="imageSwitchBtn imageSwitchBtnSel"><span>1</span></a></div><div></div><div class="switchGroup switchGroup_banner " style="width: 942px; position: relative; height: 559px; overflow: hidden; margin: 0px auto;"><div class="J_billboardItem numImg" id="numImg0" style="position: absolute; width: 100%; padding-top: 0px;">
+<div class="J_bannerItem" title="" style="width: 942px; height: 559px; cursor: default; overflow: hidden; display: block; outline: none; margin: 0px auto; position: relative; z-index: 1; background-image: url(&quot;http://7312462.s21i-7.faiusr.com/2/ABUIABACGAAg4YuXtgUo3rWkrwIwrgc4rwQ.jpg&quot;); background-position: 50% 50%; background-repeat: no-repeat;">
+</div>
+</div>
+</div><div class="effectShow" id="effectShow" style="position:absolute; top:0px; left:311px; z-index:1;"><object id="effectShow_swf" type="application/x-shockwave-flash" data="./Files/65.swf" width="960" height="559"><param name="movie" value="http://0.ss.faisys.com/image/site/effects/65.swf?083db28f5a66e3a2ea54d4a75b5776e1"><param name="quality" value="high"><param name="flashvars" value="text1=&amp;text2=&amp;size1=undefined&amp;size2=undefined&amp;color1=0x000&amp;color2=0xFFFFFF&amp;style1=undefined&amp;style2=undefined"><param name="wmode" value="transparent"><embed name="effectShow_swf" wmode="transparent" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-4445535400000" id="effectFlash" src="http://0.ss.faisys.com/image/site/effects/65.swf?083db28f5a66e3a2ea54d4a75b5776e1" quality="high" menu="false" play="true" loop="true" width="960" height="559" flashvars="text1=&amp;text2=&amp;size1=undefined&amp;size2=undefined&amp;color1=0x000&amp;color2=0xFFFFFF&amp;style1=undefined&amp;style2=undefined"></object></div><div id="bannerGetHref" class="bannerGetHref" style="position: absolute; top: 0px; left: 320.5px; width: 942px; height: 559px; z-index: 1; cursor: pointer; background: url(&quot;http://0.ss.faisys.com/image/site/transpace.png&quot;);" onmouseover="Site.bannerInitHref();" onmouseout="Site.startBannerInterval();" onclick="Site.bannerGetHref();"></div></div>
+
+								</td>
+								<td class="bannerRight"></td>
+							</tr>
+						</tbody></table>
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+
+		<table class="absMiddleTable" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="center">
+					<div id="absForms" class="forms sideForms absForms">
+						<div id="module375" _indexclass="formIndex1" _moduletype="1" _modulestyle="1" _moduleid="375" systempattern="107" class="form form375 formIndex1 formStyle1 modulePattern modulePattern107" title="" _sys="0" _banid="" style="position: absolute; top: 0px; left: 9px; width: 543px; height: 266px;" _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _autoheight="0" _global="false" _independent="false">
+<table class="formTop formTop375" cellpadding="0" cellspacing="0"><tbody><tr><td class="left"></td><td class="center"></td><td class="right"></td></tr></tbody></table>
+<table class="formBanner formBanner375" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+<td class="left left375"></td>
+<td class="center center375" valign="top">
+<table cellpadding="0" cellspacing="0" class="formBannerTitle formBannerTitle375"><tbody><tr>
+<td class="titleLeft titleLeft375" valign="top">
+</td>
+<td class="titleCenter titleCenter375" valign="top">
+<div class="titleText titleText375"><span class="bannerNormalTitle fk_mainTitle mainTitle mainTitle375">感谢</span></div>
+</td>
+<td class="titleRight titleRight375" valign="top">
+</td>
+</tr></tbody></table>
+</td>
+<td class="right right375"></td>
+</tr></tbody></table>
+<table class=" formMiddle formMiddle375" style="height: 231px;" cellpadding="0" cellspacing="0"><tbody><tr>
+<td class="formMiddleLeft formMiddleLeft375"></td>
+<td class="formMiddleCenter formMiddleCenter375 " valign="top">
+<div class="formMiddleContent formMiddleContent375" tabstyle="0" style="height: 221px; overflow-y: hidden;">
+<div class="richContent richContent0"><p><span style="color:#333333;font-family:微软雅黑;font-size:15px;">在此，我特别感谢：</span></p><p><span style="color:#333333;font-family:微软雅黑;font-size:15px;"> &nbsp; &nbsp;百度贴吧的<br></span></p><p><span style="color:#333333;font-family:微软雅黑;font-size:15px;"> &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="color:#333333;line-height:1.8;font-family:微软雅黑;font-size:15px;">fp4869、</span><span style="color:#333333;line-height:1.8;font-family:微软雅黑;font-size:15px;"> LJ37NX、</span><span style="color:#333333;line-height:1.8;font-family:微软雅黑;font-size:15px;">wfwhl12</span><span style="line-height:1.8;font-family:微软雅黑;font-size:15px;">（</span><span style="color:#FF0000;line-height:1.8;font-family:微软雅黑;font-size:15px;">感谢他，如果不是他，我根本不曾接触Lazarus，更别说Delphi</span><span style="line-height:1.8;"><span style="line-height:1.8;font-family:微软雅黑;font-size:15px;">）</span></span></p><p><span style="color:#333333;line-height:27px;font-family:微软雅黑;font-size:15px;"> &nbsp; &nbsp;网络的<br></span></p><p><span style="color:#333333;line-height:27px;font-family:微软雅黑;font-size:15px;"> &nbsp; &nbsp; &nbsp; &nbsp;无数中外电脑爱好者、网友们</span><span style="color:#333333;line-height:27px;font-family:微软雅黑;font-size:15px;"> （</span><span style="color:#FF0000;line-height:27px;font-family:微软雅黑;font-size:15px;">给予我无数经验、资源</span><span style="color:#333333;line-height:27px;font-family:微软雅黑;font-size:15px;">）</span></p><p><span style="color:#333333;line-height:27px;font-family:微软雅黑;font-size:15px;"><br></span></p><p><span style="color:#333333;font-family:微软雅黑;"><span><span style="color:#333333;font-family:微软雅黑;font-size:14px;">以及：</span></span></span><strong><span style="font-family:微软雅黑;"><a title="捐赠者名单" style="color:#FF0000;text-decoration:underline;" href="http://zory.icoc.cc/col.jsp?id=115" target="_self" _n="/col.jsp?id=115" _i="/col.jsp?id=115" _t="103" bstyle="true" astyle_h="1"><span style="color:#FF0000;font-family:微软雅黑;font-size:14px;">捐赠者名单</span></a></span></strong></p></div></div>
+</td>
+<td class="formMiddleRight formMiddleRight375"></td>
+</tr></tbody></table>
+<table class="formBottom formBottom375" cellpadding="0" cellspacing="0"><tbody><tr><td class="left left375"></td><td class="center center375"></td><td class="right right375"></td></tr></tbody></table>
+<div class="clearfloat clearfloat375"></div>
+</div>
+
+<div id="module378" _indexclass="formIndex2" _moduletype="1" _modulestyle="1" _moduleid="378" systempattern="107" class="form form378 formIndex2 formStyle1 modulePattern modulePattern107" title="" _sys="0" _banid="" style="position:absolute;top:0px;left:560px;width:387px;" _side="0" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _autoheight="1" _global="false" _independent="false">
+<table class="formTop formTop378" cellpadding="0" cellspacing="0"><tbody><tr><td class="left"></td><td class="center"></td><td class="right"></td></tr></tbody></table>
+<table class="formBanner formBanner378" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+<td class="left left378"></td>
+<td class="center center378" valign="top">
+<table cellpadding="0" cellspacing="0" class="formBannerTitle formBannerTitle378"><tbody><tr>
+<td class="titleLeft titleLeft378" valign="top">
+</td>
+<td class="titleCenter titleCenter378" valign="top">
+<div class="titleText titleText378"><span class="bannerNormalTitle fk_mainTitle mainTitle mainTitle378">捐助</span></div>
+</td>
+<td class="titleRight titleRight378" valign="top">
+</td>
+</tr></tbody></table>
+</td>
+<td class="right right378"></td>
+</tr></tbody></table>
+<table class=" formMiddle formMiddle378" style="" cellpadding="0" cellspacing="0"><tbody><tr>
+<td class="formMiddleLeft formMiddleLeft378"></td>
+<td class="formMiddleCenter formMiddleCenter378 " valign="top">
+<div class="formMiddleContent formMiddleContent378" tabstyle="0">
+<div class="richContent richContent0"><p style="color:#666666;line-height:normal;font-family:微软雅黑, 黑体, 新宋体, &quot;Arial Unicode MS&quot;;background-color:#FFFFFF;"><span style="color:#000000;line-height:21.6px;font-family:微软雅黑, sans-serif;font-size:15px;"> 　　如果您觉得这些软件或资源不错，而且希望能给作者继续下去的动力的话，欢迎进行捐助。</span><br></p><p style="line-height:21.6px;background-color:#FFFFFF;"><span style="line-height:21.6px;"> 　　<span style="font-family:微软雅黑, sans-serif;font-size:15px;">这个捐助不仅仅指金钱上的，同时还有精神上的。</span></span></p><p style="line-height:21.6px;background-color:#FFFFFF;"><strong style="line-height:21.6px;"><span style="line-height:21.6px;font-family:微软雅黑, sans-serif;font-size:15px;"><br></span></strong></p><p style="line-height:21.6px;background-color:#FFFFFF;"><strong style="line-height:21.6px;"><span style="line-height:21.6px;font-family:微软雅黑, sans-serif;font-size:15px;"><span style="line-height:21.6px;"> 　　<a title="传送门" href="http://zory.icoc.cc/col.jsp?id=114" target="_blank" _n="http://zory.icoc.cc/col.jsp?id=114" _i="http://zory.icoc.cc/col.jsp?id=114" _t="103" astyle_h="1" style="color:#FF0000;">传送门</a></span></span></strong></p><p style="color:#666666;line-height:21.6px;font-family:微软雅黑, 黑体, 新宋体, &quot;Arial Unicode MS&quot;;background-color:#FFFFFF;"><span style="color:#000000;line-height:21.6px;font-family:微软雅黑, sans-serif;font-size:15px;"><span style="font-family:微软雅黑, sans-serif;font-size:15px;line-height:21.6px;background-color:#FFFFFF;"> </span><span style="font-family:微软雅黑, sans-serif;font-size:15px;line-height:21.6px;background-color:#FFFFFF;"> &nbsp; </span><span style="font-family:微软雅黑, sans-serif;font-size:15px;line-height:21.6px;background-color:#FFFFFF;"> &nbsp; &nbsp;</span></span></p><p style="color:#666666;line-height:21.6px;font-family:微软雅黑, 黑体, 新宋体, &quot;Arial Unicode MS&quot;;background-color:#FFFFFF;"><span style="color:#000000;line-height:21.6px;font-family:微软雅黑, sans-serif;font-size:15px;"> 　　<strong><span style="color:#000000;line-height:21.6px;font-family:微软雅黑, sans-serif;font-size:17px;">感谢您的支持！</span></strong></span></p><p style="color:#666666;line-height:21.6px;font-family:微软雅黑, 黑体, 新宋体, &quot;Arial Unicode MS&quot;;background-color:#FFFFFF;"><span style="color:#000000;line-height:21.6px;font-family:微软雅黑, sans-serif;font-size:15px;"><br></span></p><p style="line-height:21.6px;background-color:#FFFFFF;"><span style="font-family:微软雅黑, sans-serif;"><span style="font-size:15px;"> 　　还可以留名哦：<strong style="line-height:21.6px;"><span style="font-family:微软雅黑;"><a title="捐赠者名单" style="color:#FF0000;font-size:14px;" href="http://zory.icoc.cc/col.jsp?id=115" target="_self" _n="/col.jsp?id=115" _i="/col.jsp?id=115" _t="103" bstyle="true" astyle_h="1"><span style="font-size:14px;">捐赠者名单</span></a></span></strong></span></span></p></div></div>
+</td>
+<td class="formMiddleRight formMiddleRight378"></td>
+</tr></tbody></table>
+<table class="formBottom formBottom378" cellpadding="0" cellspacing="0"><tbody><tr><td class="left left378"></td><td class="center center378"></td><td class="right right378"></td></tr></tbody></table>
+<div class="clearfloat clearfloat378"></div>
+</div>
+
+
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+		
+
+
+		<div id="fullmeasureTopForms" class="fullmeasureContainer forms sideForms fullmeasureForms fullmeasureTopForms" style="display:none">
+			
+		<wbr style="display:none;"></div>
+		
+		<table id="webContainerTable" class="webContainerTable fk-webContainerTableForNoLayout" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="center">
+					<div id="webContainer" class="webContainer">
+						<div id="container" class="container">
+	<table class="containerTop" cellpadding="0" cellspacing="0">
+		<tbody><tr valign="top">
+			<td class="left"></td>
+			<td class="center"></td>
+			<td class="right"></td>
+		</tr>
+	</tbody></table>
+
+	<table class="containerMiddle" cellpadding="0" cellspacing="0">
+		<tbody><tr valign="top">
+			<td id="containerMiddleLeft" class="containerMiddleLeft">
+					
+					
+					
+					
+			</td>
+
+			<td class="containerMiddleCenter">
+				<div id="containerMiddleCenterTop" class="containerMiddleCenterTop">
+					
+				</div>
+
+				<div id="containerForms" class="containerForms">
+					<div id="topForms" class="column forms mainForms topForms" style="display:none">
+						
+					</div>
+
+					<table class="containerFormsMiddle" cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td valign="top" id="containerFormsLeft" class="containerFormsLeft" style="display:none">
+								<div class="containerFormsLeftTop">
+								</div>
+								<div id="leftForms" class="column forms sideForms leftForms">
+									
+								</div>
+								<div class="containerFormsLeftBottom">
+								</div>
+							</td>
+
+							<td valign="top" id="containerFormsCenter" class="containerFormsCenter">
+					
+								<div id="centerTopForms" class="column forms mainForms centerTopForms" style="display:none">
+									
+								</div>
+								<div class="containerFormsCenterMiddle J_containerFormsCenterMiddle">
+									<div id="middleLeftForms" class="column forms mainForms middleLeftForms" style="display:none">
+									
+									</div>
+									<div id="middleRightForms" class="column forms mainForms middleRightForms" style="display:none">
+									
+									</div>	
+									<div class="clearfloat"></div>
+								</div>
+								<div id="centerBottomForms" class="column forms mainForms centerBottomForms" style="display:none">
+									
+								</div>
+							</td>
+
+							<td valign="top" id="containerFormsRight" class="containerFormsRight" style="display:none">
+								<div class="containerFormsRightTop">
+								</div>
+								<div id="rightForms" class="column forms sideForms rightForms">
+									
+								</div>
+								<div class="containerFormsRightBottom">
+								</div>
+							</td>
+						</tr>
+					</tbody></table>
+
+					<div id="bottomForms" class="column forms mainForms bottomForms" style="display:none">
+						
+					</div>
+
+					<div id="containerPlaceholder" class="containerPlaceholder" style="height:273px;"></div>
+					
+				</div>
+
+				<div id="containerMiddleCenterBottom" class="containerMiddleCenterBottom">
+				</div>
+
+			</td>
+
+			<td id="containerMiddleRight" class="containerMiddleRight"></td>
+		</tr>
+	</tbody></table>
+	
+	<table class="containerBottom" cellpadding="0" cellspacing="0">
+		<tbody><tr valign="top">
+			<td class="left"></td>
+			<td class="center"></td>
+			<td class="right"></td>
+		</tr>
+	</tbody></table>
+</div>
+
+					</div>
+				</td>
+			</tr>
+		</tbody></table>		
+
+		<div id="fullmeasureBottomForms" class="fullmeasureContainer forms sideForms fullmeasureForms fullmeasureBottomForms" style="display: none;">
+			
+		<wbr style="display:none;"></div>
+		
+		<table class="absBottomTable" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="center">
+					<div id="absBottomForms" class="forms sideForms absForms">
+						<div style="position:absolute;"></div><!-- for ie6 -->
+						
+					</div>
+				</td>
+			</tr>
+		</tbody></table>
+
+		<table id="webFooterTable" class="webFooterTable" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td align="center" valign="top" class="fk-moduleZoneWrap">
+					<div id="fk-webFooterZone" class="J_moduleZone fk-webFooterZone fk-moduleZone forms sideForms">
+						<div class="fk-moduleZoneBg"></div>
+						
+					</div>
+					
+						<div id="webFooter" class="webFooter">
+							<div id="footer" class="footer" style=""><table class="footerTop" cellpadding="0" cellspacing="0"><tbody><tr valign="top"><td class="topLeft"></td><td class="topCenter"></td><td class="topRight"></td></tr></tbody></table><table class="footerMiddle" cellpadding="0" cellspacing="0"><tbody><tr valign="top"><td class="middleLeft"></td><td class="middleCenter" align="center"><div class="footerContent"><div class="footerInfo"><p><strong><span style="color:#FFFFFF;font-family:微软雅黑;font-size:17px;">Zory Software.</span></strong></p><p><strong><span style="color:#333333;font-family:微软雅黑;font-size:19px;"><span style="color:#FFFFFF;font-family:微软雅黑;font-size:17px;"><span style="color:#FFFFFF;font-family:微软雅黑;font-size:14px;"> &nbsp;©2017 &nbsp;Zory</span></span></span></strong></p></div><div class="footerSupport" id="footerSupport">           <span class="footerMobile"><a hidefocus="true" href="http://m.zory.icoc.cc/" target="_blank">手机版</a></span>       <span class="footerSep">|</span>               <span class="footerFaisco">本站使用<a hidefocus="true" href="http://jz.faisco.com/?_ta=4" onclick="Site.logDog(100065, 0);" target="_blank"><span class="faisco-icons-logo" id="faisco-icons-logo" style="padding-left: 2px; padding-right: 2px; position: relative; top: 2px; font-size: 17px;"></span>凡科建站</a><span style="padding-left:8px;">搭建</span></span>           <span class="footerSep">|</span>           <span id="footerLogin" class="footerLogin"><a name="popupLogin" hidefocus="true" href="javascript:;" onclick="Site.popupLogin(&quot;http://www.faisco.cn&quot;,7312462);Fai.closeTip(&quot;#footerLogin&quot;);return false;">管理登录</a></span>                    <span class="bgplayerButton" id="bgplayerButton" style="display:none;"></span></div></div></td><td class="middleRight"></td></tr></tbody></table><table class="footerBottom" cellpadding="0" cellspacing="0"><tbody><tr valign="top"><td class="bottomLeft"></td><td class="bottomCenter"></td><td class="bottomRight"></td></tr></tbody></table></div>
+
+						</div>
+						
+					
+				</td>
+			</tr>
+		</tbody></table>
+
+		<div class="clearfloat"></div>
+	</div>	
+</div>
+
+
+
+<div class="floatLeftTop" style="top: 0px;">
+	<div id="floatLeftTopForms" class="forms sideForms floatForms">
+		
+	</div>
+</div>
+<div class="floatRightTop" style="top: 0px;">
+	<div id="floatRightTopForms" class="forms sideForms floatForms">
+		
+	</div>
+</div>
+<div class="floatLeftBottom">
+	<div id="floatLeftBottomForms" class="forms sideForms floatForms">
+		<div id="module359" _indexclass="formIndex1" _moduletype="1" _modulestyle="75" _moduleid="359" class="form form359 formIndex1 formStyle75 jz-moduleSide" title="" _sys="0" _banid="" style="position: absolute; top: -430px; left: -448px; width: 448px; height: 430px; overflow: visible;" _side="1" _intab="0" _inmulmcol="0" _infullmeasure="0" _inpack="0" _autoheight="0" _global="false" _independent="false"><table class="formTop formTop359" cellpadding="0" cellspacing="0"><tbody><tr><td class="left"></td><td class="center"></td><td class="right"></td></tr></tbody></table>
+<table class="formBanner formBanner359" cellpadding="0" cellspacing="0" style=""><tbody><tr>
+<td class="left left359"></td>
+<td class="center center359" valign="top">
+<table cellpadding="0" cellspacing="0" class="formBannerTitle formBannerTitle359"><tbody><tr>
+<td class="titleLeft titleLeft359" valign="top">
+</td>
+<td class="titleCenter titleCenter359" valign="top">
+<div class="titleText titleText359"><span class="bannerNormalTitle fk_mainTitle mainTitle mainTitle359">留言提交</span></div>
+</td>
+<td class="titleRight titleRight359" valign="top">
+</td>
+</tr></tbody></table>
+<div class="formBannerOther formBannerOther359">
+<div class="formBannerMore formBannerMore359" style="">
+<span style="_display:inline-block;_position:relative;">
+<a hidefocus="true" class="bannerMoreInnerA" target="_blank" href="http://zory.icoc.cc/msgBoard.jsp"><span class="bannerMoreInnerSpan">更多&gt;&gt;</span></a>
+</span>
+</div>
+<div class="formBannerBtn formBannerBtn359">
+<span style="_display:inline-block;_position:relative;"><a hidefocus="true" href="javascript:;" onclick="Site.closeAd(&quot;module359&quot;);return false;" class="g_close"><span class="bannerMoreInnerSpan" style="_display:none;">&nbsp;</span></a>
+</span></div>
+&nbsp;</div>
+</td>
+<td class="right right359"></td>
+</tr></tbody></table>
+<table class="formMiddle formMiddle359 jz-moduleSide-content" style="height:430px; " cellpadding="0" cellspacing="0"><tbody><tr>
+<td class="formMiddleLeft formMiddleLeft359"></td>
+<td class="formMiddleCenter formMiddleCenter359 " valign="top">
+<div class="formMiddleContent formMiddleContent359" tabstyle="0">
+<div id="msgSubmit359" class="msgSubmit msgBoard msgSAddWrap">
+<div id="msgSAdd" class="msgSAdd">
+<div class="g_tip msgSTips"></div>
+<div class="msgSAdd_N">
+<div class="msgAddTitle_N">发表您的留言：</div>
+<div class="msgPanel_N" style="width: 408px;"><div class="msgSubmit_overToPoint msgSubmit_overToPointFL" style="width:180px"><div class="msgSubmit_PropBoard" style="width:176px">姓名：</div></div><input class="g_itext msgSubmit_ipt " id="reqName" name="姓名" type="text" size="14" maxlength="50" value="" style="width: 215px;"></div>
+<div class="msgPanel_N" style="width: 408px;"><div class="msgSubmit_overToPoint msgSubmit_overToPointFL" style="width:180px"><div class="msgSubmit_PropBoard" style="width:176px">QQ/微信/邮箱【非必需】：</div></div><input class="g_itext msgSubmit_ipt " id="prop0" name="QQ/微信/邮箱【非必需】" type="text" size="14" maxlength="50" style="width: 215px;"></div>
+</div>
+<div class="msgAddText_N"><div style="width:180px" class="msgSubmit_overToPoint msgSubmit_overToPointFL"><div class="msgSubmit_PropBoard" style="width:176px">内容：</div></div><textarea class="g_textarea msgAddTextNTextarea" id="reqContent" rows="3" cols="50" placeholder="留言需审核后才会显示" maxlength="10000" style="width: 215px;"></textarea>
+</div>
+<div class="msgCaptcha_N  J_msgBoardCaptcha "><div style="width:180px" class="msgSubmit_overToPoint msgSubmit_overToPointFL"><div class="msgSubmit_PropBoard" style="width:176px">验证码：</div></div><div class="msgSubmitItemFL"><input class="g_itext" id="msgSubmitCaptcha" type="text" maxlength="4"></div><div class="validateCode_N msgSubmitItemFL"><img alt="" onclick="Site.changeMsgSubmitValidateCode(359)" title="看不清，换一张" id="msgSubmitCaptchaImg" class="msgSubmitCaptchaImg2" src="./Files/validateCode.jsp"></div></div>
+<div class="msgAddButton_N">
+<div style="float: left; width: 180px; display: inline-block;" class="msgSubmit_overToPoint"><div class="msgSubmit_PropBoard" style="width:176px">&nbsp;</div></div><div class="m_ibutton m_ibutton6" style="float: left;">
+<div class="left"></div><div class="middle msgSubmitTips" onclick="Site.msgSubmitAddMsg(false, 359,0)">提交留言</div><div class="right"></div></div></div></div>
+</div>
+</div>
+</td>
+<td class="formMiddleRight formMiddleRight359"></td>
+</tr></tbody></table>
+<table class="formBottom formBottom359" cellpadding="0" cellspacing="0"><tbody><tr><td class="left left359"></td><td class="center center359"></td><td class="right right359"></td></tr></tbody></table>
+<div class="clearfloat clearfloat359"></div>
+
+
+
+
+
+
+<div id="module359SideBtn" class="g_sideBtn fk-sideLeft" style="top: 161px; left: 448px;"><div class="g_sideBtn_t g_sB_lt"></div><div class="g_sideBtn_c g_sB_lc"><span class="g_sideBtn_tl">留言提交</span></div><div class="g_sideBtn_b g_sB_lb"></div><div class="g_sideBtn_extend g_sB_le"></div></div></div>
+
+
+	</div>
+</div>
+<div class="floatRightBottom">
+	<div id="floatRightBottomForms" class="forms sideForms floatForms">
+		
+	</div>
+</div>
+
+
+
+
+	<div id="bgMusic" class="bgMusic">
+	
+	</div>	
+	
+
+<script type="text/javascript" src="./Files/jquery-core.min.js"></script>
+<script type="text/javascript" src="./Files/jquery-mousewheel.min.js"></script>
+<script type="text/javascript" src="./Files/fai.min.js"></script>
+<script type="text/javascript" src="./Files/jquery-ui-core.min.js"></script>
+<script type="text/javascript" src="./Files/site.min.js"></script>
+<script type="text/javascript" src="./Files/2052.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+
+
+function showYuanDanWindow(){
+	var hasShowYuanDanLuckyGuy = $.cookie("hasShowYuanDanLuckyGuy",{path:"/"});
+	var _hasGetYuanDanLuckyGuy_ = $.cookie("_hasGetYuanDanLuckyGuy_",{path:"/"});
+	var _openbigImg = false;
+	
+	if(_openbigImg == true){
+		if(hasShowYuanDanLuckyGuy == 'true' || _hasGetYuanDanLuckyGuy_ != 'true' ){
+			Site.isShowThreeDaysLuckyGuy = "true";
+			Site.isTenMinutes = 'true';
+			$.cookie("hasShowYuanDanLuckyGuy",false,{path:"/"});
+			Site.drawLottery();
+		}else{
+		
+			Site.sendResult2();	
+		}
+	}	
+}
+
+
+
+	var fk_sale = new Object();	
+	fk_sale.cid = 7312462;
+	fk_sale.siteVer = 10;
+	fk_sale.popupWindowSiteVer = 10;	
+	fk_sale.isLuckyGuyFlag = false;
+	fk_sale.popupWindowEndYear = 2017;
+	fk_sale.popupWindowEndMonth = 6;
+	fk_sale.popupWindowEndDay = 30;
+	fk_sale.popupWindowDays = -8;
+	fk_sale.popupWindowMs = -745093299;
+	fk_sale.openDays = 642;
+	fk_sale.openMinutes = 925574;
+	fk_sale.popupWindowEndSignupHours = 720.0;
+	fk_sale.url = 'http://www.faisco.cn/portal.jsp#appId=shop';	
+	fk_sale.showDomainWindowFlag = false;
+	fk_sale.cacct = 'zory';
+	fk_sale.imgBigSrc = 'http://jz.faisys.com/image/pro/20170101/salesPromotion.png?v=201701101133';
+	fk_sale.imgBigBtn = 'http://jz.faisys.com/image/pro/20170101/btn_buy.png?v=201701101133';
+	fk_sale.imgClose = 'http://jz.faisys.com/image/pro/20170101/close.png?v=201701101133';
+	fk_sale.siteFirstLogin = false;
+	fk_sale.isShowAdvertisementWindowThreeMinute = false;
+	fk_sale.textUrl = 'http://www.faisco.cn/portal.jsp#appId=shop';
+	fk_sale.domainImgBigBg = 'http://jz.faisys.com/image/pro/20160101/domainSearchImg.png';
+	fk_sale.domainImgClose = 'http://jz.faisys.com/image/pro/20160101/close.png?v=201601181937';
+	fk_sale.siteBizBigClose = 'http://jz.faisys.com/image/pro/20160701/close_popup.png';
+	fk_sale.siteBizBigBg = 'http://jz.faisys.com/image/pro/20160701/popup01.png';
+	fk_sale.showSiteBizWindow = false;
+	fk_sale.showSitePopWindow = false;
+	fk_sale.openFlyer = false;
+
+
+</script>
+
+
+
+
+
+<div class="siteAdvertisement_box" id="sitePopVister" style="height:172px; overflow:hidden;">	<div class="siteAdvertisement_Inner">		<div class="siteAdvertisement_title">			<a class="reportUrl" href="http://www.faisco.com/ts.html?t=3&amp;a=zory" target="_blank">举报</a>			<a class="closeImg" href="javascript:void(0)"></a>		</div>		<a class="siteAdvertisement_adImg" target="_blank" href="http://jz.faisco.com/?_ta=4" onclick="Site.logDog(200004,1)"><img src="./Files/faisco_visitor.jpg" width="125" height="125" alt="轻松建网站"></a>	</div>	<a class="freeJZ" href="http://jz.faisco.com/?_ta=4" target="_blank"><span>免费建站</span></a></div><script type="text/javascript">if( $.cookie('faiscoAd') == 'true'){$('.siteAdvertisement_box').show();}$('#sitePopVister').show();</script>	
+
+<link type="text/css" href="./Files/fontsIco.min.css" rel="stylesheet">
+
+
+
+
+
+
+<script type="text/javascript">
+// 为了避免用户误操作，在域名结尾输入多余字符导致cookie失效问题，这里校验一下浏览器的host是否与后台拿到的host一致
+//if (window.location.host != 'zory.icoc.cc') { window.location.href = 'http://' + 'zory.icoc.cc'; }
+//console.log(window.location.host.lastIndexOf("."));
+var _jsErrCahche = [];
+window.onerror = function(sMsg,sUrl,sLine){
+	if (typeof Site == 'undefined') {
+		alert('您的网页未加载完成，请尝试按“CTRL+功能键F5”重新加载。');
+	}
+	if( sLine < 1 || typeof sMsg != 'string' || sMsg.length < 1 ){
+		return;
+	}
+	
+	var log = "Error:" + sMsg + ";Line:" + sLine + ";Url:" + sUrl;
+	var alertLog = "Error:"+sMsg+"\n" + "Line:" + sLine + "\n" + "Url:" + sUrl + "\n";
+	var encodeUrl = function (url){
+		return typeof url === "undefined" ? "" : encodeURIComponent(url);
+	};
+	
+	var ajax = true;
+	var obj = { 'm' : sMsg, 'u' : sUrl, 'l' : sLine };
+	for( var i = 0; i < _jsErrCahche.length; i ++ ){
+		if( _jsErrCahche[i].m == obj.m && _jsErrCahche[i].u == obj.u && _jsErrCahche[i].l == obj.l  ){
+			ajax = false;
+			break;
+		}
+	}
+	
+	if( ajax ){
+		_jsErrCahche.push( obj );
+		_faiAjax.ajax({
+			type	: "post",
+			url		: "ajax/logJsErr_h.jsp?cmd=jsErr",
+			data	: 'msg='+ encodeUrl(log)
+		});
+	}
+	if(false){
+		alert( alertLog );
+	}
+};
+
+
+Fai.top = window;
+var _Global = {};
+var bgmCloseToOpen = false;
+var _debug = false;
+var _isPre = false;
+var _devMode = false;
+var _colOtherStyleData = {"independentList":[],"y":273,"h":0,"layout4Width":0,"layout5Width":0};						// 当前页面的数据    
+var _templateOtherStyleData = {"independentList":[],"h":580,"y":0,"layout4Width":0,"layout5Width":0};						// 全局的数据
+
+
+var _templateDefLayout = {BANNER_NAV:0,NAV_FLOAT:1,LEFT_NAV_BANNER_RIGHT_HIDE:3,LEFT_NAV_CENTER_BANNER_RIGHT_HIDE:4,LEFT_BANNER_NAV_RIGHT_HIDE:5,LEFT_NAV_EXPEND_CENTER_BANNER:6,CENTER_TOP_BANNER_RIGHT_HIDE:7,LEFT_HIDE_CENTER_TOP_BANNER:8,NAV_FLOAT_ON_BANNER:9,NAV_BANNER:10}; 
+
+$(".currentProgress").css("width", "30%");
+$(function() {
+	
+
+	
+		Site.ajaxLoadModuleDom(2, 0, {"_ajaxLoadModuleList":[{"id":359,"valid":true,"special":false,"inCol":{"id":359,"t":-430,"l":-448,"bi":"","bs":0,"s":1,"it":0,"imc":0,"ifm":0,"ip":0,"x":0,"o":12}}],"_partDomInfoList":[],"fullUrl":"http://zory.icoc.cc/"});
+		
+
+	
+	
+	
+	
+	//Site.changeTheLogoSize();
+	Site.showOrHideMailBox();
+	
+	
+    	
+
+	Site.loginSiteInit('zory','faisco.cn', false,"");
+
+	//topBarMember 
+	
+	
+	
+	
+
+	// 绑定退出事件
+	Site.bindBeforeUnloadEvent(false, false, false);
+
+	Site.initTemplateLayout(_templateDefLayout.NAV_FLOAT, true, false );
+	// spider统计
+	
+
+
+
+	
+	
+	// ajax统计
+	Site.total({colId:2, pdId:-1, ndId:-1, sc:0, rf:""});
+	//前端性能数据上报
+	//Site.report();
+	//保留旧用户的初始化版式区域4 和区域5 中，区域4的padding-right空间
+	Site.colLayout45Width();
+	//各个模块inc吐出脚本
+	Site.initWeatherOfIP(387, 1);
+
+Site.cacheModuleFunc.init('initFlBtnStyle', {"moduleId":362,"btnNumSystem":104,"btnStyle":{"s":{"t":1,"w":105,"h":37},"bg":{"t":0,"c":"#000000","r":3},"r":{"t":0,"lt":10,"rt":10,"lb":10,"rb":10},"sh":{"t":2,"dy":0,"f":0,"c":"transparent","dx":0},"b":{"t":0,"w":1,"c":"#000000"}},"otherStr":{"cc":"#c40000","utc":0,"gcc":"#fff","bcc":"#000","imc":0}});
+Site.adjustFlBtnPos(362);
+
+Site.initBanner({"_open":true,"data":[{"title":"","desc":"","imgWidth":942,"imgHeight":559,"ot":1,"src":"http://7312462.s21i-7.faiusr.com/2/ABUIABACGAAg4YuXtgUo3rWkrwIwrgc4rwQ.jpg","edgeLeft":"","edgeRight":""}],"width":942,"height":559,"playTime":4000,"animateTime":1500,"from":"banner","btnType":1,"wideScreen":false}, {"_open":true,"type":65,"position":0,"positionTop":0,"positionLeft":0,"text1":"自定义文字1","text2":"自定义文字2","style1":"宋体","style2":"宋体","color1":"#000","color2":"#FFFFFF","size1":"50","size2":"30"}, 4);
+Site.hoverChangeImage();Site.hoverStyle();
+
+
+
+	//收集浏览器信息，统计dog
+	Site.sendBrowerInfo(false);
+
+	Site.initPage();	// 这个要放在最后，因为模块组初始化时会把一些模块隐藏，导致没有高度，所以要放最后执行
+	
+	
+	
+	setTimeout(afterModuleLoaded, 0);
+
+	
+
+	
+	
+
+	Site.triggerGobalEvent("siteReadyLoad");
+	
+	
+	
+});
+
+function afterModuleLoaded() {
+	
+	Site.initPage2();
+Site.initBackToTopTool(false,false,false,'回到顶部','null');
+	
+
+	
+	//Site.mallCartInit(_colId);
+	//Site.mobiWebInit();
+	
+	
+	
+	
+	
+	
+
+	$(".currentProgress").css("width", "100%");
+	setTimeout(function(){
+		$(".fk-loadingBar").remove();
+	}, 300)
+} // afterModuleLoaded end
+
+var _lcid = 2052;
+var _siteDomain = 'http://zory.icoc.cc';
+var _resRoot = 'http://0.ss.faisys.com';
+var _colId = 2;
+var _fromColId = -1;
+var _designAuth = false;
+var _manageMode = false;
+var _oem = false;
+var _siteVer = 10;
+var _manageStatus = false;
+
+_Global._webRightBar = false;
+var _isMemberLogin = false;// 会员是否登陆了
+var _noCover = 0; 			// 隐藏弹窗遮罩层
+
+
+
+var nav2SubMenu=[];
+var nav107SubMenu=[];
+var nav111SubMenu=[];
+var nav9SubMenu=[];
+var nav113SubMenu=[];
+var nav114SubMenu=[{"hidden":false,"colId":115,"href":"/col.jsp?id=115","target":" target='_self'","colName":"感谢你们","html":"<span class='itemName0'>感谢你们<\/span>","title":"","onclick":"return true;"}];
+
+
+var _useBannerVersionTwo = false; //使用横幅2.0的标志
+var _customBackgroundData = {"styleDefault":true,"s":true,"h":false,"r":3,"o":"","sw":-1,"e":0,"wbh":-1,"wbw":-1,"clw":-1,"crw":-1,"wbws":-1,"wbs":0,"id":"","p":"","bBg":{"y":0,"r":3,"f":"","p":"","c":"#000"},"cBg":{"y":0,"r":3,"f":"","p":"","c":"#000"},"cmBg":{"y":0,"r":3,"f":"","p":"","c":"#000"},"bm":{},"cm":{},"cp":{"y":0}};          //自定义的数据
+var _templateBackgroundData = {"id":"","bBg":{"y":0,"r":-1,"f":"","p":"","c":"#ffffff"},"cBg":{"y":0,"r":3,"f":"","p":"","c":"#000"},"cmBg":{"y":0,"r":3,"f":"","p":"","c":"#000"},"o":"#fff","s":true,"h":false,"r":3,"sw":-1,"e":0,"wbh":-1,"wbw":-1,"clw":-1,"crw":-1,"wbws":-1,"wbs":0,"p":"","bm":{},"cm":{},"cp":{"y":0}};// 模版的数据
+var _resImageRoot = 'http://2.ss.faisys.com';
+
+var _templateBannerData = {"ce":{"c1":"#000","c2":"#FFFFFF"},"pl":0,"l":[{"i":"ABUIABACGAAgzK3psgUojPP_rAEw5go4vwU","p":"http://7312462.s21i-7.faiusr.com/2/ABUIABACGAAgzK3psgUojPP_rAEw5go4vwU_404.jpg","w":1382,"h":703,"tp":"http://7312462.s21i-7.faiusr.com/2/ABUIABACGAAgzK3psgUojPP_rAEw5go4vwU_404!100x100.jpg","ijti":false}],"o":true,"t":8,"c":1,"h":true,"s":0,"i":4000,"a":1500,"p":0,"pt":0,"bt":1,"ws2":false,"f":{},"n":[],"at":0,"ws":false};		// 模版的数据
+
+var _pageBannerData = {"l":[{"i":"ABUIABACGAAg4YuXtgUo3rWkrwIwrgc4rwQ","p":"http://7312462.s21i-7.faiusr.com/2/ABUIABACGAAg4YuXtgUo3rWkrwIwrgc4rwQ.jpg","w":942,"h":559,"tp":"http://7312462.s21i-7.faiusr.com/2/ABUIABACGAAg4YuXtgUo3rWkrwIwrgc4rwQ!100x100.jpg","ijti":false}],"n":[{"t":1,"i":"ABUIABACGAAg4YuXtgUo3rWkrwIwrgc4rwQ","e":0,"u":"","p":"http://7312462.s21i-7.faiusr.com/2/ABUIABACGAAg4YuXtgUo3rWkrwIwrgc4rwQ.jpg","w":942,"h":559,"tp":"http://7312462.s21i-7.faiusr.com/2/ABUIABACGAAg4YuXtgUo3rWkrwIwrgc4rwQ!100x100.jpg","ijti":false,"el":"","er":""}],"ce":{"c1":"#000","c2":"#FFFFFF"},"s":4,"pl":0,"o":true,"t":65,"i":4000,"a":1500,"h":false,"p":0,"pt":0,"bt":1,"ws2":false,"f":{},"c":3,"at":0,"ws":false};					// 当前页面的自定义数据（页面独立样式设置）
+var _bannerData = _pageBannerData;
+
+var _templateBannerV2Data = {"s":0,"bl":[],"bt":1,"at":0,"i":4000,"a":1500,"blh":{"t":0},"blw":{"t":0},"bzb":{"t":0},"bla":0,"ble":{"t":0,"at":0}};		// 横幅2.0模版的数据
+var _pageBannerV2Data = {"s":1,"bl":[{"t":1,"i":"ABUIABACGAAg4YuXtgUo3rWkrwIwrgc4rwQ","e":0,"u":"","p":"http://7312462.s21i-7.faiusr.com/2/ABUIABACGAAg4YuXtgUo3rWkrwIwrgc4rwQ.jpg","w":942,"h":559,"tp":"http://7312462.s21i-7.faiusr.com/2/ABUIABACGAAg4YuXtgUo3rWkrwIwrgc4rwQ!100x100.jpg","ijti":false,"el":"","er":""}],"bt":1,"at":0,"i":4000,"a":1500,"blh":{"t":0},"blw":{"t":0},"bzb":{"t":0},"bla":0,"ble":{"t":0,"at":0}};					// 横幅2.0当前页面的自定义数据（页面独立样式设置）
+var _bannerV2Data = _pageBannerV2Data;
+
+
+var _useTemplateHeaderZone = true;				// 是否使用全局模版
+var _useTemplateFooterZone = true;				// 是否使用全局模版
+
+var _mallOpen = false;
+var _couponOpen = false
+
+var toolBoxShowView = false;
+var toolBoxShowSet = false;
+var _wideBanner = false;		
+
+var _navStyleData = {"no":true,"s":56,"ns":{"w":630,"h":34},"cs":{"w":630,"h":34,"wy":0},"np":{},"ncp":{"y":1,"t":66,"r":-1,"b":-1,"l":267,"hl":826,"ht":-151},"cp":{"y":1,"t":0,"l":0},"nis":{"w":90,"h":34},"gt":{"y":1,"f":"微软雅黑","s":16,"w":0,"c":"#4d4d4d"},"ht":{"y":1,"c":"#ffffff"},"nb":{"c":"#000","f":"","r":0,"p":"","y":0},"cb":{"c":"#000","f":"","r":0,"p":"","y":0},"nib":{"c":"#000","r":0,"f":"","p":"","y":0},"nihb":{"y":2,"c":"transparent","f":"ABUIABAEGAAglKLerwUo9MuhkQEwgQE4JQ","r":3,"p":"http://7312462.s21i-7.faiusr.com/4/ABUIABAEGAAglKLerwUo9MuhkQEwgQE4JQ.png"},"niss":{"w":1,"h":34},"nisb":{"y":1,"c":"#000","r":0,"f":"","p":""},"nsigt":{"f":"宋体","s":12,"w":0,"c":"#000","y":0},"nsiht":{"c":"#000","y":0},"nsis":{"w":-1,"h":-1},"nsib":{"c":"#000","r":0,"f":"","p":"","y":0},"nsihb":{"c":"#000","r":0,"f":"","p":"","y":0},"nsiho":0,"nmove":1,"v":2,"ntf":{"t":0,"ht":0},"nsmt":{},"nsmb":{},"nrs":{"n":{"t":0},"c":{"t":0},"i":{"t":0},"smt":{"t":0},"smb":{"t":0},"si":{"t":0},"is":{"t":0},"sis":{"t":0},"tmt":{"t":0},"tmb":{"t":0},"ti":{"t":0},"tis":{"t":0}},"nsw":{"n":{"t":0},"c":{"t":0},"i":{"t":0},"sm":{"t":0},"si":{"t":0},"is":{"t":0},"sis":{"t":0}},"nbr":{"n":{"t":0},"i":{"t":0},"sm":{"t":0},"si":{"t":0},"is":{"t":0},"sis":{"t":0},"tm":{"t":0},"ti":{"t":0},"tis":{"t":0}},"ntmt":{},"ntmb":{}};				      // 栏目导航样式
+_Global._navHidden =false;                                  //true:隐藏；flase：显示
+_Global._topBarV2 = false;                                  //true:隐藏；flase：显示
+var _siteDemo = false;
+
+
+
+_Global._backToTop = false;
+var _aid = 7312462;
+var _templateLayout = _templateDefLayout.NAV_FLOAT;
+var _webBannerHeight = -1;
+var _isTemplateVersion2 = false;
+var _uiMode= false;
+
+var _choiceCurrencyVal = "￥";
+var _moduleAnimationPercent = -1;
+
+var _useTemplateBackground = true;		// 是否使用模版
+
+
+
+</script>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+var fk_old_onload = window.onload;
+window.onload = function(){
+	
+	
+	
+		Site.cacheModuleFunc.runSiteInit();
+	
+
+		if(typeof fk_old_onload == "function"){
+			fk_old_onload.apply(this, arguments);
+		}
+
+
+
+		
+		Site.pageOnload();
+		
+		
+		
+	
+	
+};
+
+
+
+	Site.beforeUnloadFunc();
+
+
+
+
+
+
+	$LAB.script("http://1.ss.faisys.com/js/photoSlide.min.js?v=201707031156");
+	$LAB.script("http://1.ss.faisys.com/js/imageEffect.min.js?v=201707041706")
+		.wait(function () {
+			jzUtils.trigger({
+				"name": "ImageEffect.FUNC.BASIC.Init",
+				"base":Site
+			});
+		});
+		
+
+
+
+
+
+	
+	
+	
+</script>
+
+
+
+
+
+
+
+
+
+</body></html>
